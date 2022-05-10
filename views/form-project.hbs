@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/js/bootstrap.js">
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="logo">
+                <img src="../public/img/logo.png" alt="" style="width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project" ><b>My Project</b></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div class="d-flex">
+                <a href="contact">Contact Me</a>  
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <form class="form-project" action="/project" method="post" style="display: flex; justify-content: center;background-color: rgb(235, 235, 235);">
+        <div class="container-project" style="width: 450px;">
+            <div>
+                <h3 style="text-align: center; margin-top: 20px;">ADD MY PROJECT</h3>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputName1" class="form-label">Project Name</label>
+                <input type="text" class="form-control" id="exampleInputName1" name="project">
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputstart4" class="form-label">Start Date</label>
+                    <input type="date" class="form-control" id="inputstart4" name="start">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputend4" class="form-label">End Date</label>
+                    <input type="date" class="form-control" id="inputend4" name="end">
+                </div>
+            </div>
+            <div>
+                <label for="exampleInputmessage1" class="form-textarea">Message</label>
+                <div class="form-floating">
+                    <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px;"></textarea>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="exampleInputTechno1" class="form-label">Technologies</label>
+                </div>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="nodejs">
+                        <label class="form-check-label" for="inlineCheckbox1">Node Js</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="reactjs" style="margin-left: 4px; margin-right: 10px;">
+                        <label class="form-check-label" for="inlineCheckbox2">React Js</label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="nextjs" >
+                            <label class="form-check-label" for="inlineCheckbox1">Next Js</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="typescript" style="margin-left: 10px; margin-right: 10px;">
+                            <label class="form-check-label" for="inlineCheckbox2">Type Script</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputImage1" class="form-label" style="margin-top: 10px;">Upload Image</label>
+                <input type="file" class="form-control" id="exampleInputImage1" name="image">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary" style="background-color: rgb(14, 13, 13); border: none; float: right;">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

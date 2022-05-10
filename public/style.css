@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*navbar*/
+nav .d-flex a{
+    background-color:rgb(14, 13, 13) ;
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+/*contact me*/
+.form-control{
+    margin-bottom: 20px;
+}
+
+/*project*/
+.container-project{
+    width: 400px;
+}
+.card-text{
+    text-align: justify;
+}
+.card-home-body{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
